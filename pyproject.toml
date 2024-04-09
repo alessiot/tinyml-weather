@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "tinyml-weather"
+version = "0.1.0"
+description = ""
+authors = ["Alessio T <alessioai@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+#tensorflow = "^2.15.0.post1"
+ipykernel = "^6.29.1"
+tensorflow-macos = "^2.15.0"
+scikit-learn = "^1.4.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+keras-tuner = "^1.4.6"
+metar = {git = "https://github.com/python-metar/python-metar.git"}
+plotly = "^5.19.0"
+nbformat = "^5.9.2"
+tqdm = "^4.66.2"
+pyserial = "^3.5"
+pyarrow = "^15.0.0"
+uuid = "^1.30"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
